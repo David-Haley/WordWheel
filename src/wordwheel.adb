@@ -4,13 +4,13 @@ with Ada.Characters.Handling; use Ada.Characters.Handling;
 with Ada.Text_IO.Unbounded_IO; use Ada.Text_IO.Unbounded_IO;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Ada.Containers.Ordered_Sets;
-with DJH.Execution_Time; use DJH.Execution_Time;
 
 procedure WordWheel is
 
 -- Author    : David Haley;
 -- Created   : 18/02/2025
--- Last Edit : 19/02/2025
+-- Last Edit : 21/02/2025
+-- 21/02/2025: Put_CPU_time removed, not supported on RPI 2.
 
 -- This solves the Courier Mail WordWheel pusel using the Linux Dictionary
 
@@ -95,5 +95,4 @@ begin -- Word_Wheel
          Solve (Word_Store, Backwards (Wheel_Word));
       end if; -- Wheel_Word (Word_Length) /= '?'
    end if; -- Argument_Count /= 1 or else Argument (1)'Length /= Word_Length
-   Put_CPU_time;
 end WordWheel;

@@ -80,7 +80,7 @@ use Word_Stores;
    Wheel_Word : Wheel_Words;
 
 begin -- Word_Wheel
-   Put_Line ("WordWheel version 20250219");
+   Put_Line ("WordWheel version 20250221");
    if Argument_Count /= 1 or else Argument (1)'Length /= Word_Length then
       Put_Line ("Usage wordwheel Wheel_Word");
       Put_Line ("Where Wheel_Word is seven letters followed by '?'");

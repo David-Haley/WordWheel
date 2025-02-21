@@ -1,0 +1,11 @@
+project WordWheel is
+
+   for Source_Dirs use ("src", "/home/david/Ada/DJH/src");
+   for Object_Dir use "obj";
+   for Main use ("wordwheel.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-gnat2020");
+   end Compiler;
+
+end WordWheel;
